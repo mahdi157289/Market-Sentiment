@@ -34,7 +34,7 @@ const generateAIAnalysis = (): AISummaryType => {
 
   const randomAnalysis = analyses[Math.floor(Math.random() * analyses.length)];
   return {
-    text: randomAnalysis.text,
+    text: randomAnalysis?.text ?? "Aucune analyse disponible.",
     timestamp: new Date()
   };
 };

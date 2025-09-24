@@ -165,8 +165,8 @@ function SentimentGaugeBase({ data, size = 'lg' }: SentimentGaugeProps) {
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.4, delay: 0.2 }}
           className={`font-bold ${textSizes[size]} ${
-            currentZone.color === '#dc2626' ? 'text-red-400' : 
-            currentZone.color === '#ca8a04' ? 'text-yellow-400' : 'text-green-400'
+            (currentZone?.color ?? '#16a34a') === '#dc2626' ? 'text-red-400' : 
+            (currentZone?.color ?? '#16a34a') === '#ca8a04' ? 'text-yellow-400' : 'text-green-400'
           }`}
         >
           {clamped}/100
@@ -179,7 +179,7 @@ function SentimentGaugeBase({ data, size = 'lg' }: SentimentGaugeProps) {
           transition={{ duration: 0.4, delay: 0.3 }}
           className="text-sm sm:text-base lg:text-lg font-medium text-white/90 mt-2"
         >
-          ({currentZone.frenchLabel})
+          ({currentZone?.frenchLabel})
         </motion.div>
 
         {/* Risk Assessment */}

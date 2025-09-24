@@ -165,7 +165,8 @@ function IndexChart({ selectedIndex, range, onRangeChange }: { selectedIndex: Ma
   // Determine color based on trend
   const firstValue = values[0];
   const lastValue = values[values.length - 1];
-  const isBullish = lastValue > firstValue;
+  const diff = (lastValue ?? 0) - (firstValue ?? 0);
+  const isBullish = diff > 0;
   const color = isBullish ? '22, 163, 74' : '220, 38, 38'; // Green or Red
   
   const chartData = {
