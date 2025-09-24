@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  @apply bg-background text-text font-inter antialiased;
+  background-image: radial-gradient(1200px 600px at 10% 10%, rgba(22,163,74,0.15), transparent 60%),
+    radial-gradient(1000px 500px at 90% 30%, rgba(202,138,4,0.12), transparent 60%);
+}
+
+.glass {
+  @apply bg-white/5 backdrop-blur-md shadow-glass border border-white/10 rounded-xl;
+}
+
+
+

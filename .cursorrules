@@ -1,0 +1,22 @@
+
+
+PROJECT: US Market Sentiment Dashboard
+PRIORITY: 5-second market understanding → 1-minute context → 5-minute trade decision
+
+COLOR SYSTEM:
+- Green (#16a34a) = Bullish/Positive
+- Red (#dc2626) = Bearish/Negative  
+- Yellow (#ca8a04) = Neutral/Caution
+- Background: Black/dark gradients
+- Text: Light for readability
+
+COMPONENT HIERARCHY (exact order):
+1. Header: Title + Index selector (NASDAQ/US100, SP500/US500, Dow Jones/US30)
+2. Large Sentiment Gauge (speedometer style) 
+3. Mini-cards: Fear & Greed, VIX, Put/Call, DXY, 10Y Yield
+4. Charts: Index price + VIX parallel + Market breadth (% above MA50/MA200)
+5. Macro Cards: PIB, CPI, Chômage/NFP, Fed Funds Rate
+6. News & Social: Twitter/StockTwits sentiment + News headlines
+7. AI Summary: Natural language market analysis
+
+Design: Glassmorphism, futuristic, financial professional style
